@@ -1,8 +1,37 @@
 """Búsqueda: Escribe un programa en pseudocódigo que realice una búsqueda de un número
 dado, en un arreglo. Crea una función modular para llevar a cabo la búsqueda.
 """
-
 basta = True
+numeroB = [] # Arreglo
+
+# Ingresa número
+numero = int(input("Ingrese número: "))
+
+# Función de búsqueda en el arreglo
+def busqueda_arreglo(numero):
+    busqueda = numeroB
+    return busqueda
+
+while basta: # Se repetirá mientras basta sea 1 (verdadero)
+    for i in range(basta): # Aquí sería cuando basta con opción 1 o 0, darle la finalización al rango del arreglo.
+        numeroB.append(numero) # Agregamos el número al arreglo, es decir, lo guardamos dentro de la caja.
+
+    numero = int(input("Ingrese número: "))
+    basta = int(input("¿Desea seguir ingresando un número? SI=1 / NO=0: "))
+
+if basta == 0: 
+    busqueda = int(input("¿Desea ver algún número? Ingrese el número que desea buscar: "))
+    busqueda = busqueda_arreglo(numero)
+    print("Se ha concretado la búsqueda de números. Su valor se encuentra en alguno de los siguientes:", busqueda)
+else:
+    print("Error. Intente de nuevo")
+
+
+
+
+
+
+"""basta = True
 numeroB = [] #Arreglo
 
 #Ingresa numero
@@ -25,7 +54,7 @@ if basta == 0:
     busqueda = busqueda_arreglo(numero)
     print("Se ha concretado la Busqueda de Numeros. Su valor se encuentra en algunas de las siguientes:", busqueda)
 else:
-    print("Error. Intente de nuevo")
+    print("Error. Intente de nuevo")"""
 
 
 
